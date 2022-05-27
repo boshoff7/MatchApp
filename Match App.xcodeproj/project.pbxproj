@@ -13,6 +13,14 @@
 		C275D3B127BEA01C0029B761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C275D3AF27BEA01C0029B761 /* Main.storyboard */; };
 		C275D3B327BEA01E0029B761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C275D3B227BEA01E0029B761 /* Assets.xcassets */; };
 		C275D3B627BEA01E0029B761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C275D3B427BEA01E0029B761 /* LaunchScreen.storyboard */; };
+		C275D3BE27BEA5B70029B761 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C275D3BD27BEA5B70029B761 /* CardModel.swift */; };
+		C275D3C027BEA6A00029B761 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C275D3BF27BEA6A00029B761 /* Card.swift */; };
+		C275D3C227BEAEB70029B761 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C275D3C127BEAEB70029B761 /* CardCollectionViewCell.swift */; };
+		C2D4823527C3985700324336 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = C2D4823127C3985700324336 /* cardflip.wav */; };
+		C2D4823627C3985700324336 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = C2D4823227C3985700324336 /* dingwrong.wav */; };
+		C2D4823727C3985700324336 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = C2D4823327C3985700324336 /* dingcorrect.wav */; };
+		C2D4823827C3985700324336 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = C2D4823427C3985700324336 /* shuffle.wav */; };
+		C2D4823A27C398AB00324336 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4823927C398AB00324336 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		C275D3B227BEA01E0029B761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C275D3B527BEA01E0029B761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C275D3B727BEA01E0029B761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C275D3BD27BEA5B70029B761 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		C275D3BF27BEA6A00029B761 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C275D3C127BEAEB70029B761 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2D4823127C3985700324336 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		C2D4823227C3985700324336 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		C2D4823327C3985700324336 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		C2D4823427C3985700324336 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		C2D4823927C398AB00324336 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,31 @@
 		C275D3A827BEA01C0029B761 /* Match App */ = {
 			isa = PBXGroup;
 			children = (
+				C2D4823027C397F100324336 /* Sounds */,
 				C275D3A927BEA01C0029B761 /* AppDelegate.swift */,
+				C2D4823927C398AB00324336 /* SoundManager.swift */,
 				C275D3AB27BEA01C0029B761 /* SceneDelegate.swift */,
 				C275D3AD27BEA01C0029B761 /* ViewController.swift */,
+				C275D3BD27BEA5B70029B761 /* CardModel.swift */,
+				C275D3BF27BEA6A00029B761 /* Card.swift */,
+				C275D3C127BEAEB70029B761 /* CardCollectionViewCell.swift */,
 				C275D3AF27BEA01C0029B761 /* Main.storyboard */,
 				C275D3B227BEA01E0029B761 /* Assets.xcassets */,
 				C275D3B427BEA01E0029B761 /* LaunchScreen.storyboard */,
 				C275D3B727BEA01E0029B761 /* Info.plist */,
 			);
 			path = "Match App";
+			sourceTree = "<group>";
+		};
+		C2D4823027C397F100324336 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C2D4823127C3985700324336 /* cardflip.wav */,
+				C2D4823327C3985700324336 /* dingcorrect.wav */,
+				C2D4823227C3985700324336 /* dingwrong.wav */,
+				C2D4823427C3985700324336 /* shuffle.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +158,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C275D3B627BEA01E0029B761 /* LaunchScreen.storyboard in Resources */,
+				C2D4823627C3985700324336 /* dingwrong.wav in Resources */,
+				C2D4823527C3985700324336 /* cardflip.wav in Resources */,
+				C2D4823827C3985700324336 /* shuffle.wav in Resources */,
 				C275D3B327BEA01E0029B761 /* Assets.xcassets in Resources */,
 				C275D3B127BEA01C0029B761 /* Main.storyboard in Resources */,
+				C2D4823727C3985700324336 /* dingcorrect.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C275D3AE27BEA01C0029B761 /* ViewController.swift in Sources */,
+				C275D3BE27BEA5B70029B761 /* CardModel.swift in Sources */,
+				C275D3C027BEA6A00029B761 /* Card.swift in Sources */,
 				C275D3AA27BEA01C0029B761 /* AppDelegate.swift in Sources */,
+				C275D3C227BEAEB70029B761 /* CardCollectionViewCell.swift in Sources */,
+				C2D4823A27C398AB00324336 /* SoundManager.swift in Sources */,
 				C275D3AC27BEA01C0029B761 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +335,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
